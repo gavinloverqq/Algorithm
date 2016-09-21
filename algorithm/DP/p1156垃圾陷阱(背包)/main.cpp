@@ -24,7 +24,7 @@ int main() {
         cin >> T >> F >> H;
         N[i] = Node(T,F,H);
     }
-    sort(N+1,N+G);
+    sort(N+1,N+G+1);//此处第一次写错,总是wa10号点
 //    for (int k = 1; k <= G; ++k) {
 //        cout << N[k].T <<" "<<N[k].F<<" "<<N[k].H<<endl;
 //    }
@@ -39,7 +39,7 @@ int main() {
     }
 //    cout << num;
     int dp[110];int dpLife = 10;
-    memset(dp,0, sizeof(dp));
+//    memset(dp,0, sizeof(dp));
     int i;
     dp[0] = 10;
 //    for (int j = 1; j <= num; ++j) {
@@ -55,13 +55,25 @@ int main() {
 //            return 0;
 //        }
 //    }
+
+//    for (int j = 1; j <= G; ++j) {
+//        for (i = D; i >= 0; --i) {
+//            if(dp[i] < N[j].T) continue;
+//            if(i + N[j].H >= D){cout << N[j].T << endl;
+//                return 0;
+//            }
+//            dp[i + N[j].H] = max(dp[i + N[j].H] ,dp[i]);
+//            dp[i] += N[j].F;
+//        }
+//    }
     for (int j = 1; j <= G; ++j) {
         for (i = D; i >= 0; --i) {
             if(dp[i] < N[j].T) continue;
             if(i + N[j].H >= D){cout << N[j].T << endl;
                 return 0;
             }
-            dp[i + N[j].H] = max(dp[i + N[j].H] ,dp[i]);
+            dp[i + N[j].H] =max(dp[i],dp[i + N[j].H]);
+//            dp[i + N[j].H] = dp[i];
             dp[i] += N[j].F;
         }
     }

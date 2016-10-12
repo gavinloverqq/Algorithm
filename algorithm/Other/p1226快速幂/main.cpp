@@ -12,7 +12,7 @@ ll powb(ll a,ll n,ll k){
     }
 //    return powb(a,n >> 1,k) * powb(a,n - (n>>1),k) % k;//注意此处的优化!!!
     if(n % 2){
-        return powb((a%k)*(a%k)%k,n >> 1,k) * a % k;
+        return powb((a%k)*(a%k)%k,n >> 1,k) * a % k;//此处的递归优化也可以看出,一部分需要多次递归的可以优化传入参数,从而减少不必要的递归
     } else
         return powb((a%k)*(a%k)%k,n >> 1,k);
 }

@@ -1,6 +1,7 @@
 #include <iostream>
 #include <string>
 #include <queue>
+#include <vector>
 #include <deque>
 #include <cstring>
 #define ll long long
@@ -146,37 +147,79 @@ struct Node{
     int key;
     Node(){}
     Node(int n,int k):num(n),key(k){}
+//    Node(Node N):num(N.num),key(N.key){}
 };
 
-int visited[400000];
+struct NodeV{
+    Node N;
+    int vsd;
+//    NodeV(){}
+    NodeV(Node NN = Node(0,0),int v = 0):N(NN),vsd(v){}
+};
+
+NodeV visited[400000];
+//vector <Node> visited(400000);
 int main() {
 
     init();
     int startCantor = cantor(startNum,9);//初始状态
     int endCantor = cantor(endNum,9);//目标状态
 
-    queue <Node> q;
-    q.push(Node(1,startCantor));
-    visited[startCantor] = 1;
-    Node tmp;
+    queue <Node> qFront;
+    queue <Node> qBack;
+    qFront.push(Node(1,startCantor));
+    qBack.push(Node(1,endCantor));
+    visited[startCantor] = NodeV(Node(1,startCantor),1);
+    visited[endCantor] = NodeV(Node(2,endCantor),2);
+    Node tmpFront,tmpBack;
 
-    while (!q.empty()){
-        tmp = q.front();
-        q.pop();
-        inverseCantor(9,tmp.key);//更新了ans;
-        for (int i = 1; i <= 4; ++i) {
-            int tmpCantor = move(i);
-            if(tmpCantor > 0 && 0 == visited[tmpCantor]) {
-                if (endCantor == tmpCantor) {
-                    cout << tmp.num << endl;
+//    cout << tmpFront.num << endl;
+
+    int dirction = 1;
+    while (!qFront.empty() && !qBack.empty()){
+
+        if(qFront.size() > qBack.size())
+            dirction = 2;
+        else
+            dirction = 1;
+
+        if(1 == dirction){
+            tmpFront = qFront.front();
+            qFront.pop();
+
+            inverseCantor(9,tmpFront.key);//更新了ans;
+            for (int i = 1; i <= 4; ++i) {
+                int tmpCantor = move(i);
+                if(tmpCantor > 0 && 0 == visited[tmpCantor].vsd) {
+                    qFront.push(Node(tmpFront.num+1,tmpCantor));
+                    visited[tmpCantor] = NodeV(Node(tmpFront.num+1,tmpCantor),1);
+                }
+                if(visited[tmpCantor].vsd == 2){
+                    cout << tmpFront.num + visited[tmpCantor].N.num - 1 << endl;
                     return 0;
                 }
-                q.push(Node(tmp.num+1,tmpCantor));
-                visited[tmpCantor] = 1;
+            }
+        } else {
+            tmpBack = qBack.front();
+            qBack.pop();
+
+            inverseCantor(9,tmpBack.key);//更新了ans;
+            for (int i = 1; i <= 4; ++i) {
+                int tmpCantor = move(i);
+                if(tmpCantor > 0 && 0 == visited[tmpCantor].vsd) {
+                    qBack.push(Node(tmpBack.num+1,tmpCantor));
+                    visited[tmpCantor] = NodeV(Node(tmpBack.num+1,tmpCantor),2);
+                }
+                if(visited[tmpCantor].vsd == 1){
+                    cout << tmpBack.num + visited[tmpCantor].N.num - 1 << endl;
+                    return 0;
+                }
             }
         }
+
     }
 
     cout << -1 << endl;
     return 0;
 }
+

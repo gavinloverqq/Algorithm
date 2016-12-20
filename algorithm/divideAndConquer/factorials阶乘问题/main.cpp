@@ -86,7 +86,7 @@ int main() {
 
     cin >> q;
 //    int ans2 = findZeroP23881(q);
-    cout << findZeroP2388(q) << endl;
+    cout << findZero(q) << endl;
 
     return 0;
 }

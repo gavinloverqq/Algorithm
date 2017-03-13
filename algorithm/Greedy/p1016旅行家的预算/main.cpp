@@ -120,11 +120,16 @@ int main() {
     int longerStation = 0;
     double startDist = 0;
     for (int j = 0; j <= n + 3; ++j) {
+        int tmpMinStation = 0,flag = 0;
         for (int i = tmp.i + 1; i <= n + 1; ++i) {
             if(station[i].dist > tmp.dist + rule)
                 break;
-                pq.push(station[i]);
-                longerStation = i;
+            pq.push(station[i]);
+            longerStation = i;
+            if(tmp.p > station[i].p && flag == 0){
+                tmpMinStation = i;
+                flag = 1;
+            }
         }
         if(pq.empty()){//无解
             cout << "No Solution" << endl;
@@ -132,8 +137,10 @@ int main() {
         }
 
         if(tmp.p > pq.top().p){
-            totCost += (pq.top().dist - startDist) / oil2Distance * tmp.p;
-            tmp = pq.top();
+
+            totCost += (station[tmpMinStation].dist - startDist) / oil2Distance * tmp.p;
+//            tmp = pq.top();
+            tmp = station[tmpMinStation];
             startDist = tmp.dist;
         } else {
             if(startDist + rule >= totdist){
@@ -143,6 +150,7 @@ int main() {
             }
             totCost += rule / oil2Distance * tmp.p;
             startDist = rule + tmp.dist;
+            longerStation = pq.top().i;
             tmp = station[longerStation];
         }
         while (!pq.empty())

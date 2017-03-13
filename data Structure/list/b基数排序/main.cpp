@@ -5,6 +5,125 @@
 using namespace std;
 
 
+//计数排序
+/*int main(){
+    int a[] = {3,2,2,2,5,3,7,9,0};
+    int count[100];
+    memset(count,0, sizeof(count));
+    int Max = -1;
+    int n = end(a) - begin(a);
+    for (int i = 0; i < n; ++i) {
+        count[a[i]]++;
+        Max = max(Max,a[i]);
+    }
+    for (int j = 1; j <= Max; ++j) {
+        count[j] += count[j-1];
+    }
+    int c[100];
+    for (int k = 0; k < n; ++k) {
+        c[--count[a[k]]] = a[k];
+    }
+    for (int l = 0; l < n; ++l) {
+        cout << c[l] << endl;
+    }
+}*/
+
+
+/*void jSort(int* data,int* idxData,int n){
+    int count[10];
+    memset(count, 0, sizeof(count));
+    for (int i = 0; i < n; ++i) {
+        count[idxData[i]]++;
+    }
+    for (int j = 1; j < 10; ++j) {
+        count[j] += count[j-1];
+    }
+    int *tmp;
+    tmp = (int*)malloc(sizeof(int)*n);
+    for (int k = n-1; k >= 0; --k) {
+        int index = --count[idxData[k]];
+        tmp[index] = data[k];
+    }
+    for (int l = 0; l < n; ++l) {
+        data[l] = tmp[l];
+    }
+    free(tmp);
+}
+
+int main(){
+    int data[] = {3,42,54,25,346,81,19,34,25,7,2,13};
+    int n = sizeof(data)/ sizeof(int);
+
+    int base = 1;
+    int flag = 0;
+    int* idxData;
+    idxData = (int*)malloc(sizeof(int)*n);
+    while (1) {
+        flag = 0;
+        for (int i = 0; i < n; ++i) {
+            int tmp = (data[i] / base) % 10;
+            idxData[i] = tmp;
+            if(tmp > 0)
+                flag = 1;
+        }
+        base *= 10;
+        if (flag == 0)
+            break;
+        jSort(data,idxData,n);
+    }
+    for (int j = 0; j < n; ++j) {
+        cout << data[j] << " ";
+    }
+
+    free(idxData);
+
+}*/
+
+/*int maxN(int* data,int n){
+    int ret = 0;
+    int base = 1;
+    for (int i = 0; i < n; ++i) {
+        while (data[i] > base){
+            ++ret;
+            base *= 10;
+        }
+    }
+    return ret;
+}
+
+void radixSort(int* data,int n){
+    int loop = maxN(data,n);
+    int* tmp = new int[n];
+    int base = 1;
+    for (int i = 0; i < loop; ++i) {
+        int idx[100],count[10];
+        memset(idx, 0, sizeof(idx));
+        memset(count, 0, sizeof(count));
+        for (int j = 0; j < n; ++j) {
+            idx[j] = data[j] / base % 10;
+            ++count[idx[j]];
+        }
+        base *= 10;
+        for (int k = 1; k < 10; ++k)
+            count[k] += count[k-1];
+        for (int l = n - 1; l >= 0; --l)
+            tmp[--count[idx[l]]] = data[l];
+
+        for (int m = 0; m < n; ++m)
+            data[m] = tmp[m];
+    }
+    delete []tmp;
+}
+
+
+int main(){
+    int a[] = {4,2,5,7,324,12,4,785,34,56,23,17,48,32,12};
+    int n = end(a) - begin(a);
+    radixSort(a,n);
+    for (int i = 0; i < n; ++i)
+        cout << a[i] << " ";
+}*/
+
 /*
 int main() {
     stringstream Scin;
@@ -53,7 +172,7 @@ int main() {
 }*/
 
 
-void RadixCountSort(int *npidex,int *npdate,int n) //统计基数个数并排序(桶排序)
+/*void RadixCountSort(int *npidex,int *npdate,int n) //统计基数个数并排序(桶排序)
 {
     int i,npcount[10];             //基数只有十个 (十个桶）
     memset(npcount,0,sizeof(npcount));
@@ -98,7 +217,7 @@ int  main(){
         printf("\n");
     }
     return 0;
-}
+}*/
 
 
 

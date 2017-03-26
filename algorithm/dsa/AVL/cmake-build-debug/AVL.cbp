@@ -80,7 +80,7 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/wankun/Desktop/Algorithm/algorithm/dsa/AVL/main.cpp">
+		<Unit filename="/Users/wankun/Desktop/Algorithm/algorithm/dsa/AVL/myAvlTree.cpp">
 			<Option target="AVL"/>
 		</Unit>
 		<Unit filename="/Users/wankun/Desktop/Algorithm/algorithm/dsa/AVL/CMakeLists.txt">

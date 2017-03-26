@@ -1,6 +1,6 @@
 #include <iostream>
 #include <cmath>
-//#include <stdio.h>
+
 using namespace std;
 
 
@@ -148,7 +148,7 @@ Node* removeAt(Node*& position,Node*& hot){
     return succ;
 }
 
-// 4 + 3 重构
+// 4 + 3 重构 注意三个父节点需要更新高度
 // T1 a T2 b T3 c T4
 Node* connect34(Node* a, Node* b, Node* c, Node* T1, Node* T2,Node* T3, Node* T4){
     a->lChild = T1;
@@ -174,7 +174,7 @@ Node* connect34(Node* a, Node* b, Node* c, Node* T1, Node* T2,Node* T3, Node* T4
 }
 
 
-// 旋转
+// 旋转 传入节点为孙辈节点
 Node* rotateAt(Node* v){//孙辈节点
     Node* p = v->parent;
     Node* g = p->parent;
@@ -201,6 +201,7 @@ Node* rotateAt(Node* v){//孙辈节点
     }
 }
 
+// 插入
 Node* insertAvlNode(int data, Node*& tree){
     Node* hot = tree;
     Node*& x = searchNode(data,tree,hot);
@@ -210,18 +211,16 @@ Node* insertAvlNode(int data, Node*& tree){
     x->parent = hot;
     for (Node* g = hot; g; g = g->parent) {
         if(balanceFactor(g) > 1){
-            Node*& parentPoint = fromParentTo(g);
-            Node* childPoint = rotateAt(tallerChild(tallerChild(g)));
+            Node*& parentPoint = fromParentTo(g); // 父节点指针
+            Node* childPoint = rotateAt(tallerChild(tallerChild(g))); // 重构后的子树
             parentPoint = childPoint;
-//            g = parentPoint->parent;
-//            cout << "xxxxx" << endl;
 //            fromParentTo(g) = rotateAt(tallerChild(tallerChild(g)));//TODO 重新接入原树
             break;
         } else {
-            updateHeightAbove(g);
+            updateHeight(g);
+//            updateHeightAbove(g); // 如果此处使用updateabove则会出现问题，有可能会使插入节点的到根节点路径上部分节点的高度不正确，因为经过上面的旋转后，直接break，但是节点高度有可能变化，因此不能这样更新高度
         }
     }
-    updateHeightAbove(xx);
     return xx;
 }
 

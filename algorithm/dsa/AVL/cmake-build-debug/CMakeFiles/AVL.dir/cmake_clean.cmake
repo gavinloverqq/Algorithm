@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/AVL.dir/main.cpp.o"
+  "CMakeFiles/AVL.dir/myAvlTree.cpp.o"
   "AVL.pdb"
   "AVL"
 )

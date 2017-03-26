@@ -6,9 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/Users/wankun/Desktop/Algorithm/algorithm/dsa/AVL/main.cpp
+/Users/wankun/Desktop/Algorithm/algorithm/dsa/AVL/myAvlTree.cpp
 iostream
--
-cmath
 -
 

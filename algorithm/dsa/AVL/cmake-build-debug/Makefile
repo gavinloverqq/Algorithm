@@ -123,32 +123,32 @@ AVL/fast:
 	$(MAKE) -f CMakeFiles/AVL.dir/build.make CMakeFiles/AVL.dir/build
 .PHONY : AVL/fast
 
-main.o: main.cpp.o
+myAvlTree.o: myAvlTree.cpp.o
 
-.PHONY : main.o
+.PHONY : myAvlTree.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) -f CMakeFiles/AVL.dir/build.make CMakeFiles/AVL.dir/main.cpp.o
-.PHONY : main.cpp.o
+myAvlTree.cpp.o:
+	$(MAKE) -f CMakeFiles/AVL.dir/build.make CMakeFiles/AVL.dir/myAvlTree.cpp.o
+.PHONY : myAvlTree.cpp.o
 
-main.i: main.cpp.i
+myAvlTree.i: myAvlTree.cpp.i
 
-.PHONY : main.i
+.PHONY : myAvlTree.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) -f CMakeFiles/AVL.dir/build.make CMakeFiles/AVL.dir/main.cpp.i
-.PHONY : main.cpp.i
+myAvlTree.cpp.i:
+	$(MAKE) -f CMakeFiles/AVL.dir/build.make CMakeFiles/AVL.dir/myAvlTree.cpp.i
+.PHONY : myAvlTree.cpp.i
 
-main.s: main.cpp.s
+myAvlTree.s: myAvlTree.cpp.s
 
-.PHONY : main.s
+.PHONY : myAvlTree.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) -f CMakeFiles/AVL.dir/build.make CMakeFiles/AVL.dir/main.cpp.s
-.PHONY : main.cpp.s
+myAvlTree.cpp.s:
+	$(MAKE) -f CMakeFiles/AVL.dir/build.make CMakeFiles/AVL.dir/myAvlTree.cpp.s
+.PHONY : myAvlTree.cpp.s
 
 # Help Target
 help:
@@ -159,9 +159,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... AVL"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... myAvlTree.o"
+	@echo "... myAvlTree.i"
+	@echo "... myAvlTree.s"
 .PHONY : help
 
 

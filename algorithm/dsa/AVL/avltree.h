@@ -1,6 +1,3 @@
-//
-// Created by 万昆 on 17/3/15.
-//
 #ifndef _AVL_TREE_H_
 #define _AVL_TREE_H_
 

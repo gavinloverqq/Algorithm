@@ -105,7 +105,7 @@ Node*& searchNode(int data, Node*& tree,Node*& hot){
 }
 
 // 找出当前节点中序遍历的直接后继
-Node* Succ(Node* position){
+/*Node* Succ(Node* position){
     if(position->rChild) {
         position = position->rChild;
         while (position->lChild) {//右子树的最左节点
@@ -118,7 +118,16 @@ Node* Succ(Node* position){
         position = position->parent;
     }
     return position;
+}*/
+
+
+Node* Succ(Node* p){
+    while (p->lChild){
+        p = p->lChild;
+    }
+    return p;
 }
+
 
 // 删除
 Node* removeAt(Node*& position,Node*& hot){
@@ -131,7 +140,8 @@ Node* removeAt(Node*& position,Node*& hot){
     } else if(position->rChild == NULL){
         succ = position = position->lChild;
     } else {
-        w = Succ(w);//找出后继
+//        w = Succ(w);//找出后继
+        w = Succ(w->rChild);// 实际上找出右子树上的最小值节点
         swap(w->value,position->value);// 将待删除节点与直接后继节点交换值，然后删除直接后继节点
         Node* u = w->parent;
         if(u->lChild == w){ // 将节点接起来
@@ -265,8 +275,8 @@ int main(){
         cout << endl;
     }
 
-//    for (int j = 6; j >= 0; --j) { 
-    for (int j = 0; j < 16; ++j) {
+    for (int j = 6; j >= 0; --j) {
+//    for (int j = 6; j < 16; ++j) {
         removeAvlNode(arr[j], Root);
         preOrder(Root);
         cout << endl;

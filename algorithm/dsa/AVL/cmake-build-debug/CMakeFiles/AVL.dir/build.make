@@ -57,41 +57,119 @@ include CMakeFiles/AVL.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/AVL.dir/flags.make
 
-CMakeFiles/AVL.dir/myAvlTree.cpp.o: CMakeFiles/AVL.dir/flags.make
-CMakeFiles/AVL.dir/myAvlTree.cpp.o: ../myAvlTree.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wankun/Desktop/Algorithm/algorithm/dsa/AVL/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/AVL.dir/myAvlTree.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/AVL.dir/myAvlTree.cpp.o -c /Users/wankun/Desktop/Algorithm/algorithm/dsa/AVL/myAvlTree.cpp
+CMakeFiles/AVL.dir/main.cpp.o: CMakeFiles/AVL.dir/flags.make
+CMakeFiles/AVL.dir/main.cpp.o: ../main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wankun/Desktop/Algorithm/algorithm/dsa/AVL/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/AVL.dir/main.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/AVL.dir/main.cpp.o -c /Users/wankun/Desktop/Algorithm/algorithm/dsa/AVL/main.cpp
 
-CMakeFiles/AVL.dir/myAvlTree.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/AVL.dir/myAvlTree.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/wankun/Desktop/Algorithm/algorithm/dsa/AVL/myAvlTree.cpp > CMakeFiles/AVL.dir/myAvlTree.cpp.i
+CMakeFiles/AVL.dir/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/AVL.dir/main.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/wankun/Desktop/Algorithm/algorithm/dsa/AVL/main.cpp > CMakeFiles/AVL.dir/main.cpp.i
 
-CMakeFiles/AVL.dir/myAvlTree.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/AVL.dir/myAvlTree.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/wankun/Desktop/Algorithm/algorithm/dsa/AVL/myAvlTree.cpp -o CMakeFiles/AVL.dir/myAvlTree.cpp.s
+CMakeFiles/AVL.dir/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/AVL.dir/main.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/wankun/Desktop/Algorithm/algorithm/dsa/AVL/main.cpp -o CMakeFiles/AVL.dir/main.cpp.s
 
-CMakeFiles/AVL.dir/myAvlTree.cpp.o.requires:
+CMakeFiles/AVL.dir/main.cpp.o.requires:
 
-.PHONY : CMakeFiles/AVL.dir/myAvlTree.cpp.o.requires
+.PHONY : CMakeFiles/AVL.dir/main.cpp.o.requires
 
-CMakeFiles/AVL.dir/myAvlTree.cpp.o.provides: CMakeFiles/AVL.dir/myAvlTree.cpp.o.requires
-	$(MAKE) -f CMakeFiles/AVL.dir/build.make CMakeFiles/AVL.dir/myAvlTree.cpp.o.provides.build
-.PHONY : CMakeFiles/AVL.dir/myAvlTree.cpp.o.provides
+CMakeFiles/AVL.dir/main.cpp.o.provides: CMakeFiles/AVL.dir/main.cpp.o.requires
+	$(MAKE) -f CMakeFiles/AVL.dir/build.make CMakeFiles/AVL.dir/main.cpp.o.provides.build
+.PHONY : CMakeFiles/AVL.dir/main.cpp.o.provides
 
-CMakeFiles/AVL.dir/myAvlTree.cpp.o.provides.build: CMakeFiles/AVL.dir/myAvlTree.cpp.o
+CMakeFiles/AVL.dir/main.cpp.o.provides.build: CMakeFiles/AVL.dir/main.cpp.o
+
+
+CMakeFiles/AVL.dir/mySplay.cpp.o: CMakeFiles/AVL.dir/flags.make
+CMakeFiles/AVL.dir/mySplay.cpp.o: ../mySplay.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wankun/Desktop/Algorithm/algorithm/dsa/AVL/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/AVL.dir/mySplay.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/AVL.dir/mySplay.cpp.o -c /Users/wankun/Desktop/Algorithm/algorithm/dsa/AVL/mySplay.cpp
+
+CMakeFiles/AVL.dir/mySplay.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/AVL.dir/mySplay.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/wankun/Desktop/Algorithm/algorithm/dsa/AVL/mySplay.cpp > CMakeFiles/AVL.dir/mySplay.cpp.i
+
+CMakeFiles/AVL.dir/mySplay.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/AVL.dir/mySplay.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/wankun/Desktop/Algorithm/algorithm/dsa/AVL/mySplay.cpp -o CMakeFiles/AVL.dir/mySplay.cpp.s
+
+CMakeFiles/AVL.dir/mySplay.cpp.o.requires:
+
+.PHONY : CMakeFiles/AVL.dir/mySplay.cpp.o.requires
+
+CMakeFiles/AVL.dir/mySplay.cpp.o.provides: CMakeFiles/AVL.dir/mySplay.cpp.o.requires
+	$(MAKE) -f CMakeFiles/AVL.dir/build.make CMakeFiles/AVL.dir/mySplay.cpp.o.provides.build
+.PHONY : CMakeFiles/AVL.dir/mySplay.cpp.o.provides
+
+CMakeFiles/AVL.dir/mySplay.cpp.o.provides.build: CMakeFiles/AVL.dir/mySplay.cpp.o
+
+
+CMakeFiles/AVL.dir/djhSplay.cpp.o: CMakeFiles/AVL.dir/flags.make
+CMakeFiles/AVL.dir/djhSplay.cpp.o: ../djhSplay.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wankun/Desktop/Algorithm/algorithm/dsa/AVL/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/AVL.dir/djhSplay.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/AVL.dir/djhSplay.cpp.o -c /Users/wankun/Desktop/Algorithm/algorithm/dsa/AVL/djhSplay.cpp
+
+CMakeFiles/AVL.dir/djhSplay.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/AVL.dir/djhSplay.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/wankun/Desktop/Algorithm/algorithm/dsa/AVL/djhSplay.cpp > CMakeFiles/AVL.dir/djhSplay.cpp.i
+
+CMakeFiles/AVL.dir/djhSplay.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/AVL.dir/djhSplay.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/wankun/Desktop/Algorithm/algorithm/dsa/AVL/djhSplay.cpp -o CMakeFiles/AVL.dir/djhSplay.cpp.s
+
+CMakeFiles/AVL.dir/djhSplay.cpp.o.requires:
+
+.PHONY : CMakeFiles/AVL.dir/djhSplay.cpp.o.requires
+
+CMakeFiles/AVL.dir/djhSplay.cpp.o.provides: CMakeFiles/AVL.dir/djhSplay.cpp.o.requires
+	$(MAKE) -f CMakeFiles/AVL.dir/build.make CMakeFiles/AVL.dir/djhSplay.cpp.o.provides.build
+.PHONY : CMakeFiles/AVL.dir/djhSplay.cpp.o.provides
+
+CMakeFiles/AVL.dir/djhSplay.cpp.o.provides.build: CMakeFiles/AVL.dir/djhSplay.cpp.o
+
+
+CMakeFiles/AVL.dir/bksplay.cpp.o: CMakeFiles/AVL.dir/flags.make
+CMakeFiles/AVL.dir/bksplay.cpp.o: ../bksplay.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wankun/Desktop/Algorithm/algorithm/dsa/AVL/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/AVL.dir/bksplay.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/AVL.dir/bksplay.cpp.o -c /Users/wankun/Desktop/Algorithm/algorithm/dsa/AVL/bksplay.cpp
+
+CMakeFiles/AVL.dir/bksplay.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/AVL.dir/bksplay.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/wankun/Desktop/Algorithm/algorithm/dsa/AVL/bksplay.cpp > CMakeFiles/AVL.dir/bksplay.cpp.i
+
+CMakeFiles/AVL.dir/bksplay.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/AVL.dir/bksplay.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/wankun/Desktop/Algorithm/algorithm/dsa/AVL/bksplay.cpp -o CMakeFiles/AVL.dir/bksplay.cpp.s
+
+CMakeFiles/AVL.dir/bksplay.cpp.o.requires:
+
+.PHONY : CMakeFiles/AVL.dir/bksplay.cpp.o.requires
+
+CMakeFiles/AVL.dir/bksplay.cpp.o.provides: CMakeFiles/AVL.dir/bksplay.cpp.o.requires
+	$(MAKE) -f CMakeFiles/AVL.dir/build.make CMakeFiles/AVL.dir/bksplay.cpp.o.provides.build
+.PHONY : CMakeFiles/AVL.dir/bksplay.cpp.o.provides
+
+CMakeFiles/AVL.dir/bksplay.cpp.o.provides.build: CMakeFiles/AVL.dir/bksplay.cpp.o
 
 
 # Object files for target AVL
 AVL_OBJECTS = \
-"CMakeFiles/AVL.dir/myAvlTree.cpp.o"
+"CMakeFiles/AVL.dir/main.cpp.o" \
+"CMakeFiles/AVL.dir/mySplay.cpp.o" \
+"CMakeFiles/AVL.dir/djhSplay.cpp.o" \
+"CMakeFiles/AVL.dir/bksplay.cpp.o"
 
 # External object files for target AVL
 AVL_EXTERNAL_OBJECTS =
 
-AVL: CMakeFiles/AVL.dir/myAvlTree.cpp.o
+AVL: CMakeFiles/AVL.dir/main.cpp.o
+AVL: CMakeFiles/AVL.dir/mySplay.cpp.o
+AVL: CMakeFiles/AVL.dir/djhSplay.cpp.o
+AVL: CMakeFiles/AVL.dir/bksplay.cpp.o
 AVL: CMakeFiles/AVL.dir/build.make
 AVL: CMakeFiles/AVL.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/wankun/Desktop/Algorithm/algorithm/dsa/AVL/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable AVL"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/wankun/Desktop/Algorithm/algorithm/dsa/AVL/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable AVL"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/AVL.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -99,7 +177,10 @@ CMakeFiles/AVL.dir/build: AVL
 
 .PHONY : CMakeFiles/AVL.dir/build
 
-CMakeFiles/AVL.dir/requires: CMakeFiles/AVL.dir/myAvlTree.cpp.o.requires
+CMakeFiles/AVL.dir/requires: CMakeFiles/AVL.dir/main.cpp.o.requires
+CMakeFiles/AVL.dir/requires: CMakeFiles/AVL.dir/mySplay.cpp.o.requires
+CMakeFiles/AVL.dir/requires: CMakeFiles/AVL.dir/djhSplay.cpp.o.requires
+CMakeFiles/AVL.dir/requires: CMakeFiles/AVL.dir/bksplay.cpp.o.requires
 
 .PHONY : CMakeFiles/AVL.dir/requires
 

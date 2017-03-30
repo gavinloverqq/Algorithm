@@ -123,32 +123,113 @@ AVL/fast:
 	$(MAKE) -f CMakeFiles/AVL.dir/build.make CMakeFiles/AVL.dir/build
 .PHONY : AVL/fast
 
-myAvlTree.o: myAvlTree.cpp.o
+bksplay.o: bksplay.cpp.o
 
-.PHONY : myAvlTree.o
+.PHONY : bksplay.o
 
 # target to build an object file
-myAvlTree.cpp.o:
-	$(MAKE) -f CMakeFiles/AVL.dir/build.make CMakeFiles/AVL.dir/myAvlTree.cpp.o
-.PHONY : myAvlTree.cpp.o
+bksplay.cpp.o:
+	$(MAKE) -f CMakeFiles/AVL.dir/build.make CMakeFiles/AVL.dir/bksplay.cpp.o
+.PHONY : bksplay.cpp.o
 
-myAvlTree.i: myAvlTree.cpp.i
+bksplay.i: bksplay.cpp.i
 
-.PHONY : myAvlTree.i
+.PHONY : bksplay.i
 
 # target to preprocess a source file
-myAvlTree.cpp.i:
-	$(MAKE) -f CMakeFiles/AVL.dir/build.make CMakeFiles/AVL.dir/myAvlTree.cpp.i
-.PHONY : myAvlTree.cpp.i
+bksplay.cpp.i:
+	$(MAKE) -f CMakeFiles/AVL.dir/build.make CMakeFiles/AVL.dir/bksplay.cpp.i
+.PHONY : bksplay.cpp.i
 
-myAvlTree.s: myAvlTree.cpp.s
+bksplay.s: bksplay.cpp.s
 
-.PHONY : myAvlTree.s
+.PHONY : bksplay.s
 
 # target to generate assembly for a file
-myAvlTree.cpp.s:
-	$(MAKE) -f CMakeFiles/AVL.dir/build.make CMakeFiles/AVL.dir/myAvlTree.cpp.s
-.PHONY : myAvlTree.cpp.s
+bksplay.cpp.s:
+	$(MAKE) -f CMakeFiles/AVL.dir/build.make CMakeFiles/AVL.dir/bksplay.cpp.s
+.PHONY : bksplay.cpp.s
+
+djhSplay.o: djhSplay.cpp.o
+
+.PHONY : djhSplay.o
+
+# target to build an object file
+djhSplay.cpp.o:
+	$(MAKE) -f CMakeFiles/AVL.dir/build.make CMakeFiles/AVL.dir/djhSplay.cpp.o
+.PHONY : djhSplay.cpp.o
+
+djhSplay.i: djhSplay.cpp.i
+
+.PHONY : djhSplay.i
+
+# target to preprocess a source file
+djhSplay.cpp.i:
+	$(MAKE) -f CMakeFiles/AVL.dir/build.make CMakeFiles/AVL.dir/djhSplay.cpp.i
+.PHONY : djhSplay.cpp.i
+
+djhSplay.s: djhSplay.cpp.s
+
+.PHONY : djhSplay.s
+
+# target to generate assembly for a file
+djhSplay.cpp.s:
+	$(MAKE) -f CMakeFiles/AVL.dir/build.make CMakeFiles/AVL.dir/djhSplay.cpp.s
+.PHONY : djhSplay.cpp.s
+
+main.o: main.cpp.o
+
+.PHONY : main.o
+
+# target to build an object file
+main.cpp.o:
+	$(MAKE) -f CMakeFiles/AVL.dir/build.make CMakeFiles/AVL.dir/main.cpp.o
+.PHONY : main.cpp.o
+
+main.i: main.cpp.i
+
+.PHONY : main.i
+
+# target to preprocess a source file
+main.cpp.i:
+	$(MAKE) -f CMakeFiles/AVL.dir/build.make CMakeFiles/AVL.dir/main.cpp.i
+.PHONY : main.cpp.i
+
+main.s: main.cpp.s
+
+.PHONY : main.s
+
+# target to generate assembly for a file
+main.cpp.s:
+	$(MAKE) -f CMakeFiles/AVL.dir/build.make CMakeFiles/AVL.dir/main.cpp.s
+.PHONY : main.cpp.s
+
+mySplay.o: mySplay.cpp.o
+
+.PHONY : mySplay.o
+
+# target to build an object file
+mySplay.cpp.o:
+	$(MAKE) -f CMakeFiles/AVL.dir/build.make CMakeFiles/AVL.dir/mySplay.cpp.o
+.PHONY : mySplay.cpp.o
+
+mySplay.i: mySplay.cpp.i
+
+.PHONY : mySplay.i
+
+# target to preprocess a source file
+mySplay.cpp.i:
+	$(MAKE) -f CMakeFiles/AVL.dir/build.make CMakeFiles/AVL.dir/mySplay.cpp.i
+.PHONY : mySplay.cpp.i
+
+mySplay.s: mySplay.cpp.s
+
+.PHONY : mySplay.s
+
+# target to generate assembly for a file
+mySplay.cpp.s:
+	$(MAKE) -f CMakeFiles/AVL.dir/build.make CMakeFiles/AVL.dir/mySplay.cpp.s
+.PHONY : mySplay.cpp.s
 
 # Help Target
 help:
@@ -159,9 +240,18 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... AVL"
-	@echo "... myAvlTree.o"
-	@echo "... myAvlTree.i"
-	@echo "... myAvlTree.s"
+	@echo "... bksplay.o"
+	@echo "... bksplay.i"
+	@echo "... bksplay.s"
+	@echo "... djhSplay.o"
+	@echo "... djhSplay.i"
+	@echo "... djhSplay.s"
+	@echo "... main.o"
+	@echo "... main.i"
+	@echo "... main.s"
+	@echo "... mySplay.o"
+	@echo "... mySplay.i"
+	@echo "... mySplay.s"
 .PHONY : help
 
 

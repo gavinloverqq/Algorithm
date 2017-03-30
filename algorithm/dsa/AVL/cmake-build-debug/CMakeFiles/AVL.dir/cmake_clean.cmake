@@ -1,5 +1,8 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/AVL.dir/myAvlTree.cpp.o"
+  "CMakeFiles/AVL.dir/main.cpp.o"
+  "CMakeFiles/AVL.dir/mySplay.cpp.o"
+  "CMakeFiles/AVL.dir/djhSplay.cpp.o"
+  "CMakeFiles/AVL.dir/bksplay.cpp.o"
   "AVL.pdb"
   "AVL"
 )

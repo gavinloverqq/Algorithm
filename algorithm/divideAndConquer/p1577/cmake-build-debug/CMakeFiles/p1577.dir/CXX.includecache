@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/wankun/Desktop/Algorithm/algorithm/divideAndConquer/p1577/main.cpp
+iostream
+-
+stdio.h
+-
+cstdlib
+-
+cstring
+-
+cmath
+-
+
